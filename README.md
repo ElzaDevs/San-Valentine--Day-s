@@ -42,7 +42,7 @@ The project runs entirely in the browser without requiring any backend infrastru
 ## 🎥 Demo
 
 <p align="center">
-<img src="./docs/demo.gif" width="900">
+<img src="sakurabackground.gif/docs/demo.gif" width="900">
 </p>
 
 > Replace the GIF above with a screen recording of your website navigation.
