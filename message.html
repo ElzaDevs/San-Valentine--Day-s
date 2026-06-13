@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="playlist.html"
+<link rel="stylesheet" href="message.html">
+<link rel="stylesheet" href="Mouse.html"
+href="https://fonts.googleapis.com/css?family=Tangerine">
+<title>SAN VALENTINE DAY'S!</title>
+<!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/carta_mylove.png">
+</head> 
+    <header>
+        <header>
+            <div class="logo">♡ ILVU ♡</div>  
+      
+    <!--Seção style design inicial-->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+        @import url('https://fonts.cdnfonts.com/css/poppins');
+        
+        body{
+    min-height: 100vh;   
+    width:100%;
+    background-image: url("images/sakurabackground.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+        }
+        body::before {  
+        content: '';
+            position: fixed;
+        inset: 0;
+        background:rgba(255,245,250,0.25);
+        backdrop-filter:blur(2px);
+        pointer-events:none;
+        }
+        
+        
+        /*HEADER*/
+        header{
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        padding: 20px 50px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background:rgba(255,255,255,0.25);
+        backdrop-filter:blur(15px);
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        z-index:999;
+        }
+        .logo{
+            color:#ff5fa2;
+        font-size:30px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 5px #ea72f5, 0 0 10px #ff00d4;
+        }
+        nav{
+            display:flex;
+            gap:25px;
+        text-shadow:0 0 5px #ea72f5, 0 0 10px #ff0000;
+         color:#ff5fa2
+        }
+        nav a{
+            text-decoration: underline;
+            color:#a7104f;
+            font-weight:600;
+        font-size: 1 em;
+            text-shadow: 0 0 5px #ea72f5, 0 0 10px #ff0000;
+        color:#ff5fa2
+        }
+        p{
+            font-family: 'ICA Rubrik Black';
+            font-size: 1.3rem;
+            margin-top:15px;
+            color: #ff5fa2;
+            text-shadow: 0 0 5px #ea72f5, 0 0 10px #ff0000;
+        animation:pulsetext 2.5s ease-in-out infinite;
+        }
+        /* Seção lateral */
+        .sidebar{
+            position: absolute;
+            left: 15px;
+            top: 160px;
+        
+            width: 300px;
+            height: 650px;
+        
+            background: rgba(255, 245, 250, 0.55);
+            backdrop-filter: blur(3px);
+        
+            border: 3px dashed #f6a9d0;
+            border-radius: 12px;
+        
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        /* Linhas decorativas */
+        .divider{
+            width: 100%;
+            text-align: center;
+            color: #f3a8ca;
+            font-size: 28px;
+            margin: 20px 0;
+            border-top: 2px dashed #f3a8ca;
+            border-bottom: 2px dashed #f3a8ca;
+            line-height: 0;
+        }
+        
+        /* Menu */
+        .sidebar ul{
+            list-style-image: url("https://chu-chuns.neocities.org/bouncing-heart.gif");
+            list-style-position: inside;
+            padding-left: 5px;
+            font-family: 'Tangerine';
+        }
+        
+        .sidebar li{
+            margin: 18px 0;
+        }
+        
+        .sidebar a{
+            text-decoration: none;
+            color: #f0a8ca;
+            font-size: 36px;
+            text-shadow: 0 0 4px #ffffff00;
+            transition: 0.2s;
+        }
+        
+        .sidebar a:hover{
+            color: #ff69b4;
+            padding-left: 8px;
+        }
+        
+        /* Caixinha inferior */
+        .box{
+            
+            margin-top: 30px;
+            padding: 12px;
+            border: 2px dashed #f6b6d5;
+            border-radius: 10px;
+            text-align: center;
+            color: #d978a8;
+            background: rgba(255,255,255,0.25);
+            font-family: 'Tangerine';
+        }
+        .mini-text {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #d978a8;
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap');
+    }
+            #loveLetter{
+                position: fixed;
+                inset: 0;
+                background: rgba(255, 240, 247, 0.35);
+                backdrop-filter: blur(6px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                animation: fadeIn 1.2s ease;
+            }
+            
+            .letter-box{
+                width: 450px;
+                max-width: 90%;
+                padding: 35px;
+                border-radius: 25px;
+                background: rgba(255,255,255,0.82);
+                border: 2px solid rgba(255,192,220,.7);
+                box-shadow: 0 0 30px rgba(255,182,193,.35);
+                text-align: center;
+                position: relative;
+            }
+            
+            .title{
+                font-family: 'Great Vibes', cursive;
+                color: #d882b5;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            
+            #typingText{
+                font-family: 'Cormorant Garamond', serif;
+                color: #7b5c6d;
+                font-size: 1.25rem;
+                line-height: 1.8;
+                min-height: 170px;
+            }
+            
+            /* Envelope central */
+#envelopeContainer{
+    position: absolute;
+    top: 180px;      /* ajuste conforme seu fundo */
+    left: 53%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+#envelope{
+    width: 340px;
+    height: 220px;
+    background: rgba(255,245,248,.88);
+    border: 2px solid #efbfd4;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255,182,193,.3);
+    transition: .4s;
+    backdrop-filter: blur(5px);
+}
+
+#envelope:hover{
+    transform: scale(1.05);
+}
+
+.flap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
+    border-top: 110px solid #f8dce8;
+}
+
+.heart{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+    color: #d986b2;
+}
+
+.mini-text{
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #ba7f9c;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* Carta */
+#loveLetter{
+    position: absolute;
+    top: 70px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 700px;
+    z-index: 9999;
+display: none;
+}
+
+.letter-box{
+    width: 100%;
+    padding: 25px;
+    background: rgba(255,255,255,.78);
+    border-radius: 18px;
+    border: 2px dashed #efbfd4;
+    box-shadow: 0 0 25px rgba(255,182,193,18);
+    animation: aparecer .7s ease;
+}
+
+.letter-box h2{
+    text-align: center;
+    color: #d986b2;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-family: "Great Vibes", cursive;
+}
+
+#typingText{
+    color: #815f72;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    font-family: "Cormorant Garamond", serif;
+    text-align: justify;
+}
+
+.close-btn{
+    float: right;
+    cursor: pointer;
+    color: #d986b2;
+    font-size: 1.3rem;
+}
+
+@keyframes aparecer{
+    from{
+        transform: scale(.8);
+        opacity:0;
+    }
+    to{
+        transform: scale(1);
+        opacity:1;
+    }
+}
+    </style>
+    <!-- Carta Especial -->
+    <div id="envelopeContainer">
+        <div id="envelope" onclick="abrirCarta()">
+            <div class="flap"></div>
+            <div class="heart">♡</div>
+            <div class="mini-text">Clique para abrir a carta</div>
+        </div>
+    </div>
+    
+    <div id="loveLetter" style="display:none;">
+        <div class="letter-box">
+            <span class="close-btn" onclick="fecharCarta()">✿</span>
+            <h2>Para my little, kitty♡</h2>
+            <p id="typingText"></p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="divider">♡</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="message.html">💌 Message</a></li>
+            </ul>
+        </nav>
+        <div class="divider">♡</div>
+        <div class="box">
+            <p><img src="http://dl10.glitter-graphics.net/pub/459/459830qyqjkq81to.gif" width=50 height=50></a> ♡</p>
+        
+            <a href="https://www.glitter-graphics.com" target="_blank">
+                <img src="http://dl9.glitter-graphics.net/pub/1057/1057919fsi5i76k3s.gif"
+                     width="100"
+                     height="100"
+                     alt="Sparkling glitter animation with warm welcome sentiment">
+            <p class="mini-text"> </p>
+        </div>
+        </a>
+    </div>    
+    </div>
+</div>
+</header>       
+<!--SCRIPT JAVASCRIPT INTERACT'S-->
+<script src="script.js"></script>
+<script src="mouse.js"></script>
+<script src="music.js"></script>
+<script src="message.js"></script>
+</html>

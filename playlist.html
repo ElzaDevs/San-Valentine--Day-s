@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlist</title>
+<
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(135deg,#000000,#000000,#050016);
+    padding:30px;
+}
+
+.window{
+    width:1200px;
+    background:#d8d2ff;
+    border-radius:25px;
+    border:3px solid #8b73ff;
+    box-shadow:
+    0 0 30px rgba(120,90,255,.5),
+    inset 0 0 15px rgba(255,255,255,.8);
+    overflow:hidden;
+}
+
+.topbar{
+    height:70px;
+    background:linear-gradient(#bda8ff,#8f77ff);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+}
+
+.title{
+    font-family: 'Tangerine';
+font: size 20px;;
+
+
+
+
+
+
+
+}
+
+.window-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.circle{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:linear-gradient(#e9cee7,#9ab3ff);
+    border:2px solid #7d65ff;
+}
+
+.content{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:20px;
+    padding:20px;
+}
+
+.menu{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.menu button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    background:linear-gradient(#bda8ff,#7964ff);
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+}
+
+.section-title{
+    background:linear-gradient(#bda8ff,#806cff);
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    border:3px solid #a594ff;
+}
+
+.name{
+    color:#7861ff;
+    font-size:48px;
+    margin:10px 0;
+}
+
+.info{
+    color:#00000c;
+    margin-bottom:20px;
+}
+
+.text{
+    color:#000000;
+    line-height:1.6;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.img{
+    aspect-ratio:1;
+    border-radius:15px;
+    border:3px solid #a18cff;
+    overflow:hidden;
+    background:#eee;
+}
+
+.img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.banner{
+    margin-top:15px;
+    height:140px;
+    border-radius:20px;
+    overflow:hidden;
+    border:3px solid #a18cff;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.social{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-bottom:15px;
+}
+
+.social div{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(#bda8ff,#7d68ff);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+
+.footer{
+    height:70px;
+    background:linear-gradient(#a18cff,#7d66ff);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+
+.footer-title{
+    flex:1;
+    margin:0 20px;
+    text-align:center;
+    color:white;
+    font-size:28px;
+    border-radius:25px;
+    background:linear-gradient(#d5b6ff,#9e82ff);
+    padding:8px;
+}
+
+.small-circles{
+    display:flex;
+    gap:10px;
+}
+
+.small-circles div{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#dcb5ff;
+}
+</style>
+</head>
+<body>
+
+<div class="window">
+
+    <div class="topbar">
+        <div class="title">
+            <nav>
+<a href="index.html">🏠 Home</a>
+<a href="playlist.html">🎵 Playlist</a>
+<a href="message.html">💌 Message</a>
+            </nav>
+
+
+
+        </div>
+
+        <div class="window-buttons">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div>
+
+            <div class="menu">
+                <button>Home</button>
+                <button>Platforms</button>
+                <button>Metrics</button>
+            </div>
+
+            <div class="section-title">
+                CURRENTLY VIEWING: ABOUT ME
+            </div>
+
+            <div class="card">
+                <h2>About Me</h2>
+
+                <div class="name">NAME</div>
+
+                <div class="info">
+                    INFO / INFO / INFO
+                </div>
+
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam, voluptatem. Suspendisse maximus nisi a eleifend
+                    auctor lectus libero luctus.
+                </p>
+            </div>
+
+            <br>
+
+            <div class="gallery">
+                <div class="img">
+                    <img src="https://picsum.photos/500?1">
+                </div>
+
+                <div class="img">
+                    <img src="https://picsum.photos/500?2">
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="https://picsum.photos/1200/300">
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="social">
+                <div>T</div>
+                <div>Y</div>
+                <div>D</div>
+            </div>
+
+            <div class="gallery">
+
+                <div class="img">
+                    <img src="https://picsum.photos/500?3">
+                </div>
+
+                <div class="img">
+                    <img src="https://picsum.photos/500?4">
+                </div>
+
+                <div class="img">
+                    <img src="https://picsum.photos/500?5">
+                </div>
+
+                <div class="img">
+                    <img src="https://picsum.photos/500?6">
+                </div>
+
+            </div>
+
+            <br>
+
+
+    <div class="footer">
+
+        <div class="small-circles">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="footer-title">
+            Untitled
+        </div>
+
+        <div style="color:white;">
+            by xiu.carrd.co
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
